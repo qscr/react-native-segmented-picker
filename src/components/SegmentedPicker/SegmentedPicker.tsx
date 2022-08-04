@@ -645,6 +645,8 @@ export default class SegmentedPicker extends Component<Props, State> {
         })}
         transparent
         onRequestClose={this.onCancel}
+        supportedOrientations={['portrait', 'landscape', 'landscape-left',
+          'landscape-right', 'portrait-upside-down']}
       >
         <Animatable.View
           useNativeDriver
